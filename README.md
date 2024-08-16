@@ -1,4 +1,4 @@
-# hhmi-aam-showcase
+# prototype-open-access-showcase
 
 This repo has:
 
