@@ -35,3 +35,11 @@ npm run get-media -- PMC123456789
 ```
 
 They will also be saved to `articles/PMC123456789`.
+
+## Reference
+
+These utils are using the PMC fascilities here:
+
+- [Cloud Service](https://www.ncbi.nlm.nih.gov/pmc/tools/cloud/)
+- [AWS S3 Service](https://www.ncbi.nlm.nih.gov/pmc/tools/pmcaws/)
+- [FTP Service](https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/#indart)
