@@ -1,0 +1,9 @@
+{
+  "bucketName": "pmc-oa-opendata",
+  "paths": ["oa_comm/xml/all/", "oa_noncomm/xml/all/", "author_manuscript/xml/all/"],
+  "typeMap": {
+    "oa_comm/xml/all/": "Open Access (oa_comm)",
+    "oa_noncomm/xml/all/": "Open Access NonCommercial (oa_noncomm)",
+    "author_manuscript/xml/all/": "AAM (author_manuscript)"
+  }
+}

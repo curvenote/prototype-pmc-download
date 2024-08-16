@@ -1,0 +1,24 @@
+{
+  "name": "pmc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "ls": "aws s3 ls s3://pmc-oa-opendata --no-sign-request",
+    "ls-": "aws s3 ls s3://pmc-oa-opendata/oa_comm/xml/all/PMC11099156.xml --no-sign-request ",
+    "find": "NODE_NO_WARNINGS=1 node ./find.mjs",
+    "get-xml": "NODE_NO_WARNINGS=1 node ./get-xml.mjs",
+    "refresh-listing": "mkdir -p ./listings && curl -C - -o listings/oa_file_list.csv https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_file_list.csv",
+    "get-media": "NODE_NO_WARNINGS=1 node ./get-media.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.632.0",
+    "aws-cli": "^0.0.2",
+    "aws-sdk": "^2.1676.0",
+    "fs-extra": "^11.2.0",
+    "uuid": "^10.0.0"
+  }
+}
