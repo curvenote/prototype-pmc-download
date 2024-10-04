@@ -38,7 +38,7 @@ They will also be saved to `articles/PMC123456789`.
 
 ## Reference
 
-These utils are using the PMC fascilities here:
+These utils are using the PMC facilities here:
 
 - [Cloud Service](https://www.ncbi.nlm.nih.gov/pmc/tools/cloud/)
 - [AWS S3 Service](https://www.ncbi.nlm.nih.gov/pmc/tools/pmcaws/)

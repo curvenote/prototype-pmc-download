@@ -1,7 +1,7 @@
 import { findPMCDownload, downloadPMCPackage } from './utils.mjs';
 
 if (process.argv.length < 3) {
-  console.error('Usage: node download.mjs <pmcId>');
+  console.error('Usage: node get-media.mjs <pmcId>');
   process.exit(1);
 }
 

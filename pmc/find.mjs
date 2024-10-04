@@ -1,7 +1,7 @@
 import { makeS3Client, findFile } from './utils.mjs';
 
 if (process.argv.length < 3) {
-  console.error('Usage: node download.mjs <pmcId>');
+  console.error('Usage: node find.mjs <pmcId>');
   process.exit(1);
 }
 

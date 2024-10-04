@@ -1,4 +1,8 @@
-import { S3Client, HeadObjectCommand, GetObjectCommand } from '@aws-sdk/client-s3';
+import {
+  S3Client,
+  HeadObjectCommand,
+  GetObjectCommand,
+} from '@aws-sdk/client-s3';
 import { spawn } from 'child_process';
 import fs from 'fs-extra';
 import readline from 'readline';
@@ -23,7 +27,10 @@ async function checkFileExists(client, id, path) {
   const key = `${path}${id}.xml`;
   try {
     // Create the command to check if the object exists
-    const command = new HeadObjectCommand({ Bucket: config.bucketName, Key: key });
+    const command = new HeadObjectCommand({
+      Bucket: config.bucketName,
+      Key: key,
+    });
 
     // Send the command to S3
     await client.send(command);
@@ -140,7 +147,7 @@ export async function downloadPMCPackage(jsonObject) {
   const fileUrl = baseUrl + jsonObject.url;
 
   // Define the output directory and file paths
-  const outputDir = path.join(__dirname, 'articles', jsonObject.pmcId);
+  const outputDir = path.join('articles', jsonObject.pmcId);
   const outputFile = path.join(outputDir, path.basename(jsonObject.url));
   const jsonFilePath = path.join(outputDir, 'entry.json');
 
